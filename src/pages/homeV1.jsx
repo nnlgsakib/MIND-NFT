@@ -28,11 +28,11 @@ const HomeV1 = () => {
       <Header />
       <Banner />
       <Counter />
-      <CharacterSlider />
+      {/* <CharacterSlider /> */}
       <HowToMint />
       <About />
-      <RoadMap /> 
-      <Team />
+      {/* <RoadMap />  */}
+      {/* <Team /> */}
       <FAQ />
       <Footer />
     </Layout>

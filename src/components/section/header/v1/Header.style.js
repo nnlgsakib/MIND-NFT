@@ -61,7 +61,7 @@ const NavWrapper = styled.nav`
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 0;
       padding: 0;
 

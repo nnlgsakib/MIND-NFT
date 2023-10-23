@@ -6,32 +6,33 @@ import Button from "../../../../common/button";
 import NavWrapper from "./Header.style";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import logo from "../../../../assets/images/logo.png";
-import { isMetaMaskInstalled } from '../../../../config';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { isMetaMaskInstalled } from "../../../../config";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const Header = () => {
-  const { 
-    walletModalHandle, 
-    metamaskModalHandle, 
-    account, 
-    isWalletAlreadyConnected, 
-    disconnectWalletFromApp } = useModal();
+  const {
+    walletModalHandle,
+    metamaskModalHandle,
+    account,
+    isWalletAlreadyConnected,
+    disconnectWalletFromApp,
+  } = useModal();
   const [isMobileMenu, setMobileMenu] = useState(false);
   const handleMobileMenu = () => {
     setMobileMenu(!isMobileMenu);
   };
 
-  const substr = (str, n) =>{
-    return str.length > n ? str.substr(0, n -1) : str;
-  }
+  const substr = (str, n) => {
+    return str.length > n ? str.substr(0, n - 1) : str;
+  };
 
-  const handleWalletConnect = async () =>{
-    if(!isMetaMaskInstalled()){
+  const handleWalletConnect = async () => {
+    if (!isMetaMaskInstalled()) {
       metamaskModalHandle();
-    }else{
+    } else {
       walletModalHandle();
     }
-  }
+  };
   useEffect(() => {
     const header = document.getElementById("navbar");
     const handleScroll = window.addEventListener("scroll", () => {
@@ -49,7 +50,7 @@ const Header = () => {
 
   useEffect(() => {
     isWalletAlreadyConnected();
-  },[isWalletAlreadyConnected]);
+  }, [isWalletAlreadyConnected]);
 
   return (
     <NavWrapper className="bithu_header" id="navbar">
@@ -59,7 +60,16 @@ const Header = () => {
           <div className="bithu_menu_left_sect">
             <div className="logo">
               <a href="/">
-                <img src={logo} alt="bithu nft logo" />
+                {/* <img src={logo} alt="bithu nft logo" /> */}
+                {/* <img src="https://i.postimg.cc/Bn068ckV/Untitled-1.png" alt="" /> */}
+                {/* <img
+                  src="https://i.postimg.cc/Bn068ckV/Untitled-1.png"
+                  alt=""
+                /> */}
+                  <img
+                  src="https://i.postimg.cc/Bn068ckV/Untitled-1.png"
+                  alt=""
+                />
               </a>
             </div>
           </div>
@@ -72,16 +82,14 @@ const Header = () => {
                 <li>
                   <a href="#about">About</a>
                 </li>
-                <li>
-                  <a href="#roadmap">Roadmap</a>
-                </li>
+
                 <li>
                   <a href="#team">Team</a>
                 </li>
                 <li>
                   <a href="#faq">FAQ</a>
                 </li>
-                <li className="submenu">
+                {/* <li className="submenu">
                     <a href="# ">Pages +</a>
                     <div className="sub_menu_sect">
                       <ul className="sub_menu_list">
@@ -134,7 +142,7 @@ const Header = () => {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
               </ul>
             </div>
             <div className="bithu_menu_btns">
@@ -144,28 +152,36 @@ const Header = () => {
               <Button sm variant="outline" className="join_btn">
                 <FaDiscord /> Join
               </Button>
-              { account ?
-              <Dropdown>
-                <Dropdown.Toggle variant="white" id="dropdown-basic" className="connect_btn">
-                  { substr(account.toString(), 15) }
-                </Dropdown.Toggle>
-          
-                <Dropdown.Menu>
-                  <Dropdown.Item href="# " onClick={() => disconnectWalletFromApp() }>Disconnect</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              :
-              <Button
-                sm
-                variant="hovered"
-                className="connect_btn"
-                onClick={() => handleWalletConnect()}
-              >
-                <FaWallet />
-                Connect
-              </Button>
+              {account ? (
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="white"
+                    id="dropdown-basic"
+                    className="connect_btn"
+                  >
+                    {substr(account.toString(), 15)}
+                  </Dropdown.Toggle>
 
-              }
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      href="# "
+                      onClick={() => disconnectWalletFromApp()}
+                    >
+                      Disconnect
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              ) : (
+                <Button
+                  sm
+                  variant="hovered"
+                  className="connect_btn"
+                  onClick={() => handleWalletConnect()}
+                >
+                  <FaWallet />
+                  Connect
+                </Button>
+              )}
             </div>
           </div>
         </div>
