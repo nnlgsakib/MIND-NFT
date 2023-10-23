@@ -29,13 +29,13 @@ const Banner = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="bithu_v1_baner_left">
-              <h2>Crazy Meta 🎯 NFT collections</h2>
-              <h3>
+              <h3>GET THE ULTIMATE NFT MINTING EXPERIENCE WITH US</h3>
+              <h4 style={{color:"white"}}>
                 <span className="count">
                   <Counter end={remaining} duration={remaining} />
                 </span>{" "}
                 / 9999 Minted
-              </h3>
+              </h4>
               <div className="banner_buttons">
                 {
                   account ? 

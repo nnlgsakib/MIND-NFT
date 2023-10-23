@@ -17,8 +17,13 @@ const About = () => {
             <div className="v1_about_us_right_sect">
               <SectionTitle title="ABOUT US" subtitle="THE STORY " />
               <div className="v1_about_us_right_text">
-                <p>{aboutDescription1}</p>
-                <p>{aboutDescription2}</p>
+                <p>
+                  Welcome to the NFT Revolution. At Mindchain NFT, we are more
+                  than just a platform; We are pioneers in the world of digital
+                  creativity and ownership. In this NFT platform, everyone can
+                  buy and hold NFTs as per their choice. You can keep your NFT
+                  securely in the wallet of your choice.
+                </p>
               </div>
             </div>
           </div>

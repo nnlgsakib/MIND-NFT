@@ -33,11 +33,11 @@ const Footer = () => {
                 <div className="bottom_footer_left">
                   <div className="footer_logo">
                     <a href="# ">
-                      <img src={footerLogo} alt="bithu nft logo" />
+                      <img src="https://i.postimg.cc/fRy0JzZ8/nft-logo.png" alt="bithu nft logo" />
                     </a>
                   </div>
                   <div className="copiright_text">
-                    <p>Copyright © 2022 Bithu</p>
+                    <p>Copyright © 2023 mINDcHAIN</p>
                   </div>
                 </div>
                 <a href="# " className="bact_to_top_btn">
