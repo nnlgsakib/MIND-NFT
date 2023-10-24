@@ -14,9 +14,32 @@ import ContactPage from "../pages/contact";
 import MintPageOne from "../pages/mint-1";
 import MintPageTwo from "../pages/mint-2";
 import FAQPage from "../pages/faq";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "MindchainNFT - NFT Minting Application by Mindchain";
+  }, []);
+  useEffect(() => {
+    // Create a new link element
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = 'https://i.postimg.cc/fRy0JzZ8/nft-logo.png'; // Replace with the actual path to your favicon
+
+    // Remove the existing favicon, if any
+    const existingFavicon = document.querySelector("link[rel~='icon']");
+    if (existingFavicon) {
+      document.head.removeChild(existingFavicon);
+    }
+
+    // Append the new favicon link to the head
+    document.head.appendChild(link);
+  }, []);
   return (
+    <>
+    
+      <title>MindchainNFT - NFT Minting Application by Mindchain</title>
+
     <Routes>
       <Route path="/" element={<HomeV1 />} exact />
       <Route path="/home-two" element={<HomeV2 />} />
@@ -34,6 +57,7 @@ function App() {
       <Route path="/mint-1" element={<MintPageOne />} />
       <Route path="/mint-2" element={<MintPageTwo />} />
     </Routes>
+    </>
   );
 }
 

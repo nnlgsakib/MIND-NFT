@@ -15,11 +15,14 @@ import MintNowModal from "../common/modal/mintNowModal";
 import WalletModal from "../common/modal/walletModal/WalletModal";
 import MetamaskModal from "../common/modal/metamask/MetamaskModal";
 import ConnectWallet from "../common/modal/metamask/ConnectWallet";
+import { useEffect } from "react";
 
 const HomeV1 = () => {
+
   const { visibility, walletModalvisibility, metamaskModalVisibility, connectWalletModal } = useModal();
   return (
     <Layout>
+
        <GlobalStyles />  
       {visibility && <MintNowModal />}
       {walletModalvisibility && <WalletModal />}

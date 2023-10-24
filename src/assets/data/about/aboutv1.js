@@ -9,17 +9,17 @@ import aboutCardIcon3 from "../../images/icon/aboutus_card_icon3.svg"
         {
             icon: aboutCardIcon1,
             title: "Gamming NFTs",
-            text: "Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure."
+            text: "Experience the future of gaming with Gaming NFTs of Mindchain NFT. Collect rare in-game items, characters, and unique digital collectibles as NFTs."
         },
         {
             icon: aboutCardIcon2,
             title: "Play to Earn",
-            text: 'Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original.'
+            text: "Join Mindchain NFT's 'Play to Earn' program. Level up your gaming experience and earn while you play."
         },
         {
             icon: aboutCardIcon3,
             title: "Metaverse Ready",
-            text: 'Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure.'
+            text: 'Unlock the Mindchain NFT Metaverse, a limitless digital universe where ownership and creativity know no bounds. Dive into the Metaverse and redefine your online presence.'
         }
     ]
 }
