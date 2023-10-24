@@ -32,7 +32,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
     <MobileMenuStyleWrapper className="bithu_mobile_menu">
       <div className="bithu_mobile_menu_content">
         <div className="mobile_menu_logo">
-          <img className="bithu_logo" src={logo} alt="bithu logo" />
+          <img className="bithu_logo" src="https://i.postimg.cc/ZKPpFZHP/nft-logo-1.png" alt="bithu logo" />
           <button
             className="mobile_menu_close_btn"
             onClick={() => mobileMenuhandle()}
@@ -49,16 +49,16 @@ const MobileMenu = ({ mobileMenuhandle }) => {
             <li className="mobile_menu_hide">
               <a href="#about">About</a>
             </li>
-            <li className="mobile_menu_hide">
+            {/* <li className="mobile_menu_hide">
               <a href="#roadmap">Roadmap</a>
-            </li>
+            </li> */}
             <li className="mobile_menu_hide">
               <a href="#team">Team</a>
             </li>
             <li className="mobile_menu_hide">
               <a href="#faq">FAQ</a>
             </li>
-            <li className="submenu mobile_submenu" onClick={handleSubmenu}>
+            {/* <li className="submenu mobile_submenu" onClick={handleSubmenu}>
               <a href="# ">Pages +</a>
               <ul
                 className={`sub_menu_list mobile_sub_menu_list ${
@@ -81,7 +81,7 @@ const MobileMenu = ({ mobileMenuhandle }) => {
                   <a href="/post">Blog Details</a>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="mobile_menu_social_links">

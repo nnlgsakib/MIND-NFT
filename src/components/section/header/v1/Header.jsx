@@ -67,7 +67,7 @@ const Header = () => {
                   alt=""
                 /> */}
                   <img
-                  src="https://i.postimg.cc/fRy0JzZ8/nft-logo.png"
+                  src="https://i.postimg.cc/ZKPpFZHP/nft-logo-1.png"
                   alt=""
                 />
               </a>
