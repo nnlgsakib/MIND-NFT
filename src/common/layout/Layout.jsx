@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
          MindchainNFT - NFT Minting Application by Mindchain
         </title>
         <meta name="description" content="" />
-        <link rel="shortcut icon" type="image/x-icon" href={favIcon} />
+        <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/fRy0JzZ8/nft-logo.png" />
         {/* responsive tag */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" /> 
         {/* Bootstrap Latest compiled and minified CSS  */}
