@@ -17,24 +17,7 @@ import FAQPage from "../pages/faq";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    document.title = "MindchainNFT - NFT Minting Application by Mindchain";
-  }, []);
-  useEffect(() => {
-    // Create a new link element
-    const link = document.createElement('link');
-    link.rel = 'icon';
-    link.href = 'https://i.postimg.cc/fRy0JzZ8/nft-logo.png'; // Replace with the actual path to your favicon
-
-    // Remove the existing favicon, if any
-    const existingFavicon = document.querySelector("link[rel~='icon']");
-    if (existingFavicon) {
-      document.head.removeChild(existingFavicon);
-    }
-
-    // Append the new favicon link to the head
-    document.head.appendChild(link);
-  }, []);
+  
   return (
     <>
     
